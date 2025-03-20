@@ -12,7 +12,13 @@
     "queueit-knownuser": "^3.7.9"
   },
   "scripts": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-json-modify": "^1.0.2",
+    "gulp-modify-file": "^1.0.1",
+    "gulp-zip": "^6.1.0",
+    "path": "^0.12.7"
+  },
   "prepare": {
     "queueit-knownuser/dist/index.js": {
       "command": "browserify",

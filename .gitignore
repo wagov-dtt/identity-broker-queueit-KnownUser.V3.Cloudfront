@@ -6,3 +6,4 @@ obj
 bin
 *.zip
 dist
+.DS_Store
