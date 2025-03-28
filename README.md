@@ -63,3 +63,19 @@ your GO Queue-it platform account.
 Once enabled, you will need to check the `Include body` checkbox in the `Viewer request` function associations. This can
 be done by editing your CloudFront distribution behaviors.
 ![Function associations](https://github.com/queueit/KnownUser.V3.Cloudfront/blob/master/FunctionAssociations.png)
+
+
+### Packaging and Release
+In order to create zip files for deployment in AWS lambda run
+
+```sh
+npx gulp
+```
+
+In AWS lambda remember to update in index.js
+
+```
+let CustomerId = "YOUR CUSTOMERID HERE";
+let SecretKey = "YOUR SECRET KEY HERE";
+let APIKey = "YOUR API KEY HERE";
+```
